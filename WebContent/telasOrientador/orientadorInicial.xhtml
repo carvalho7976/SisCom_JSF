@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<h:html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:f="http://java.sun.com/jsf/core"
+xmlns:h="http://java.sun.com/jsf/html"
+xmlns:p="http://primefaces.org/ui"
+xmlns:ui="http://java.sun.com/jsf/facelets">
+
+
+<ui:composition template="/templates/templateOrientador.xhtml">
+	<ui:define name="conteudo">
+<p:panel header="#{msg['orientador']}">
+<p:messages/>
+			<h:panelGrid columns="3" cellpadding="10">
+	
+		<p:dataTable value="#{orientadorController.monitores}" var="monitor">
+			<p:column>
+
+				<f:facet name="header">
+					<p:outputLabel value="#{msg['aluno.nome']}" />
+				</f:facet>
+					<p:outputLabel value="#{monitor.nome}" />
+			</p:column>
+
+			<p:column>
+				<f:facet name="header">
+					<p:outputLabel value="#{msg['aluno.matricula']}" />
+				</f:facet>
+				<p:outputLabel value="#{monitor.matricula}" />
+			</p:column>
+			
+			<p:column>
+				<f:facet name="header">
+					<p:outputLabel value="#{msg['horariosMonitor']}" />
+				</f:facet>
+				<p:commandLink value="#{msg['horariosMonitor']}"
+							action="#{monitorController.verHorarios}" ajax="false">
+							<f:setPropertyActionListener target="#{monitorController.monitor}"
+								value="#{monitor}" />
+			</p:commandLink> 
+			</p:column>
+			
+			<p:column>
+				<f:facet name="header">
+					<p:outputLabel value="#{msg['monitor.disciplinas']}" />
+				</f:facet>
+				<p:dataList id="scroll" itemType="circle"
+				value="#{monitor.disciplinas}" var="disciplina">
+				#{disciplina.nome}
+			</p:dataList>
+			<p:commandLink value="#{msg['gerenciarDisciplinas']}"
+							action="gerenciarDisciplinas.xhtml" ajax="false">
+							<f:setPropertyActionListener target="#{monitorController.monitor}"
+								value="#{monitor}" />
+			</p:commandLink>
+			</p:column>
+			
+			<p:column>
+				<f:facet name="header">
+					<p:outputLabel value="#{msg['deixarOrientacao']}" />
+				</f:facet>
+				<p:commandLink value="#{msg['deixarOrientacao']}"
+							action="#{monitorController.deletarMonitor}" ajax="false">
+							<f:setPropertyActionListener target="#{monitorController.monitor}"
+								value="#{monitor}" />
+				</p:commandLink>
+			</p:column>
+			
+		    </p:dataTable>
+		    </h:panelGrid>
+		    <p:commandButton value="#{msg['botao.orientarAlunos']}" action="#{alunoController.retornarAlunosNaoMonitores}" ajax="false"/>
+		    </p:panel>
+		    </ui:define>
+		    </ui:composition>
+</h:html>
