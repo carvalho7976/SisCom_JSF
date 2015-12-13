@@ -18,13 +18,13 @@ import javax.persistence.OneToMany;
 
 
 @Entity
-public class Aluno implements Serializable{
+public class Aluno implements Serializable {
 	
 	
 	@Id
 	@GeneratedValue
 	private long id;
-	@Column(unique=true)
+	@Column(unique = true)
 	private String login;
 	@Column
 	private String senha;
