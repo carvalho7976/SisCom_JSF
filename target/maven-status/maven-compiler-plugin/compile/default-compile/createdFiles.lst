@@ -3,14 +3,18 @@ br/ufc/es/siscom/dao/MonitorDAO.class
 br/ufc/es/siscom/model/Aluno.class
 br/ufc/es/siscom/dao/AdministradorDAO.class
 br/ufc/es/siscom/controller/AlunoController.class
+br/ufc/es/siscom/test/HorarioTest.class
 br/ufc/es/siscom/model/Monitor.class
 br/ufc/es/siscom/dao/OrientadorDAO.class
 br/ufc/es/siscom/model/Administrador.class
 br/ufc/es/siscom/dao/HorarioDAO.class
 br/ufc/es/siscom/controller/MonitorController.class
+br/ufc/es/siscom/test/OrientadorTest.class
 br/ufc/es/siscom/model/Orientador.class
+br/ufc/es/siscom/test/DisciplinaTest.class
 br/ufc/es/siscom/controller/OrientadorController.class
 br/ufc/es/siscom/model/Horario.class
+br/ufc/es/siscom/test/LoginTest.class
 br/ufc/es/siscom/util/ControleDeAcesso.class
 br/ufc/es/siscom/util/PreparaSessao.class
 br/ufc/es/siscom/model/Disciplina.class
@@ -19,6 +23,7 @@ br/ufc/es/siscom/controller/DisciplinaController.class
 br/ufc/es/siscom/dao/DisciplinaDAO.class
 br/ufc/es/siscom/controller/HorarioController.class
 br/ufc/es/siscom/controller/LoginController.class
+br/ufc/es/siscom/test/MonitorTest.class
 br/ufc/es/siscom/test/AlunoTest.class
 br/ufc/es/siscom/controller/IdiomaController.class
 br/ufc/es/siscom/dao/AlunoDAO.class
