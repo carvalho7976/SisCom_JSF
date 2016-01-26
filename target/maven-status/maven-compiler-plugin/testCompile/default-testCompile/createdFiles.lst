@@ -1,6 +1,6 @@
-br/ufc/es/siscom/test/OrientadorTest.class
-br/ufc/es/siscom/test/MonitorTest.class
-br/ufc/es/siscom/test/AlunoTest.class
-br/ufc/es/siscom/test/HorarioTest.class
-br/ufc/es/siscom/test/LoginTest.class
-br/ufc/es/siscom/test/DisciplinaTest.class
+AlunoTest.class
+LoginTest.class
+MonitorTest.class
+OrientadorTest.class
+DisciplinaTest.class
+HorarioTest.class

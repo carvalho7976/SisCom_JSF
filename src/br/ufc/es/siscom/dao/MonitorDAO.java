@@ -86,7 +86,7 @@ public class MonitorDAO {
 		session.close();
 
 	}
-	//Método duplicado na classe HorarioDAO ver qual � o verdadeiro
+	//Método duplicado na classe HorarioDAO ver qual  o verdadeiro
 	public static void adicionarHorarioAoMonitor(long idMonitor,Horario horario){
 		session = (Session) PreparaSessao.pegarSessao();
 		session.beginTransaction();

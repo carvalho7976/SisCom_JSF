@@ -148,7 +148,7 @@
 	</repositories>
 	<build>
 		<sourceDirectory>src</sourceDirectory>
-		<testSourceDirectory>/home/rogerio/workspace/SisCom_JSF_2/src/br/ufc/es/siscom/test</testSourceDirectory>
+		<testSourceDirectory>/home/rogerio/workspace/SisCom_JSF_2/test/br/ufc/es/siscom/test</testSourceDirectory>
 
 		<resources>
 			<resource>
@@ -159,6 +159,11 @@
 			</resource>
 		</resources>
 		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>sonar-maven-plugin</artifactId>
+				<version>2.7</version>
+			</plugin>
 			<plugin>
 				<groupId>org.apache.tomcat.maven</groupId>
 				<artifactId>tomcat7-maven-plugin</artifactId>
@@ -192,13 +197,13 @@
 					<failOnMissingWebXml>false</failOnMissingWebXml>
 				</configuration>
 			</plugin>
-			
+
 		</plugins>
 	</build>
 
 	<reporting>
 		<plugins>
-		<plugin>
+			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>cobertura-maven-plugin</artifactId>
 				<version>2.5.1</version>
@@ -207,8 +212,8 @@
 						<format>xml</format>
 					</formats>
 				</configuration>
-				
-			</plugin>	
+
+			</plugin>
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

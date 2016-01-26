@@ -1,6 +1,6 @@
-/home/rogerio/workspace/SisCom_JSF_2/src/br/ufc/es/siscom/test/MonitorTest.java
-/home/rogerio/workspace/SisCom_JSF_2/src/br/ufc/es/siscom/test/AlunoTest.java
-/home/rogerio/workspace/SisCom_JSF_2/src/br/ufc/es/siscom/test/HorarioTest.java
-/home/rogerio/workspace/SisCom_JSF_2/src/br/ufc/es/siscom/test/LoginTest.java
-/home/rogerio/workspace/SisCom_JSF_2/src/br/ufc/es/siscom/test/DisciplinaTest.java
-/home/rogerio/workspace/SisCom_JSF_2/src/br/ufc/es/siscom/test/OrientadorTest.java
+/home/rogerio/workspace/SisCom_JSF_2/test/br/ufc/es/siscom/test/LoginTest.java
+/home/rogerio/workspace/SisCom_JSF_2/test/br/ufc/es/siscom/test/MonitorTest.java
+/home/rogerio/workspace/SisCom_JSF_2/test/br/ufc/es/siscom/test/OrientadorTest.java
+/home/rogerio/workspace/SisCom_JSF_2/test/br/ufc/es/siscom/test/HorarioTest.java
+/home/rogerio/workspace/SisCom_JSF_2/test/br/ufc/es/siscom/test/AlunoTest.java
+/home/rogerio/workspace/SisCom_JSF_2/test/br/ufc/es/siscom/test/DisciplinaTest.java
