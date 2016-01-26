@@ -6,6 +6,7 @@ import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
 
 import org.hibernate.classic.Session;
+import org.apache.log4j.Logger;
 import org.hibernate.Transaction;
 import org.hibernate.criterion.Restrictions;
 import org.hibernate.exception.ConstraintViolationException;
@@ -50,6 +51,8 @@ public class MonitorDAO {
 			transaction.commit();
 			session.close();
 	} catch (ConstraintViolationException e) {
+	  Logger.getRootLogger().info(e);
+	  
 		FacesMessage msg = null;
 		msg = new FacesMessage(FacesMessage.SEVERITY_WARN, "Não Foi Possivel Deletar - Monitor Possui Horarios", "Monitor Possui Horarios");
 		FacesContext.getCurrentInstance().addMessage(null, msg);
