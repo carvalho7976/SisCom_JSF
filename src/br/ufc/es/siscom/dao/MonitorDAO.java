@@ -40,7 +40,7 @@ public class MonitorDAO {
 		session.close();
 	}
 	
-	public static void deletarMonitor(Monitor monitor) throws ConstraintViolationException{
+	public static void deletarMonitor(Monitor monitor){
 		session = (Session) PreparaSessao.pegarSessao();
 		Transaction transaction = session.beginTransaction();
 		
